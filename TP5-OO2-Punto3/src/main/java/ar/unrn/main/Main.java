@@ -1,5 +1,6 @@
 package ar.unrn.main;
 
+import ar.unrn.domain.model.CarneAdicionalCombo;
 import ar.unrn.domain.model.Combo;
 import ar.unrn.domain.model.Combos;
 import ar.unrn.domain.model.DomainExceptions;
@@ -16,7 +17,9 @@ public class Main {
 
 //		Combo combo = new BasicoCombo("Combo Basico", 10);
 
-		Combo combo1 = new TomateAdicionalCombo("Tomate Adicional", 1, 5, new FamiliarCombo("Combo Familiar", 20));
+		Combo combo1 = new PapasAdicionalCombo("Papas Adicional", 1, 10,
+				new PapasAdicionalCombo("Papas Adicional", 3, 10, new CarneAdicionalCombo("Carne Adicional", 2, 10,
+						new TomateAdicionalCombo("Tomate Adicional", 2, 5, new FamiliarCombo("Combo Familiar", 20)))));
 
 		Combo combo2 = new QuesoAdicionalCombo("Queso Adiciaonal", 1, 5,
 				new PapasAdicionalCombo("Papas Adicional", 2, 8, new EspecialCombo("Combo Especial", 30)));
