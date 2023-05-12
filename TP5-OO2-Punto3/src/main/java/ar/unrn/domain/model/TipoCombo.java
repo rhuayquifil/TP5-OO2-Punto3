@@ -12,7 +12,7 @@ public class TipoCombo implements Combo {
 	}
 
 	public void descripcion() {
-		System.out.println("Combo " + descripcion + ": " + precio);
+		System.out.println("Combo " + descripcion + " ................ $" + precio);
 	}
 
 	public int precio() {

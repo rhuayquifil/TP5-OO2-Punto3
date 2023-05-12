@@ -17,7 +17,8 @@ public class AdicionalCombo implements Combo {
 
 	public void descripcion() {
 		this.combo.descripcion();
-		System.out.println("Adicional " + descripcion + " x " + cantidad + ": " + precio * cantidad);
+		System.out.println(
+				"Adicional " + descripcion + " $" + precio + " x " + cantidad + " ........ " + "$" + precio * cantidad);
 	}
 
 	public int precio() {
