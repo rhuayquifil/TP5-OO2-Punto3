@@ -1,6 +1,6 @@
 package ar.unrn.domain.model;
 
-public abstract class AdicionalCombo implements Combo {
+public class AdicionalCombo implements Combo {
 
 	private String descripcion;
 	private int cantidad;
@@ -17,7 +17,7 @@ public abstract class AdicionalCombo implements Combo {
 
 	public void descripcion() {
 		this.combo.descripcion();
-		System.out.println(descripcion + " x " + cantidad + ": " + precio * cantidad);
+		System.out.println("Adicional " + descripcion + " x " + cantidad + ": " + precio * cantidad);
 	}
 
 	public int precio() {
